@@ -2,9 +2,23 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import SettingsScreen from './screens/SettingsScreen';
+
+// const Drawer = createDrawerNavigator();
+
+// function Root(){
+//   return (
+//     <Drawer.Navigator>
+//       <Drawer.Screen name="Profile" component={ProfileScreen}/>
+      // <Drawer.Screen name="Settings" component={SettingsScreen}/>
+//     </Drawer.Navigator>
+//   )
+// }
 
 
 const Stack = createNativeStackNavigator();
